@@ -54,6 +54,12 @@ class Movie < ActiveRecord::Base
         Movie.destroy(id)
    end
 
+   # solution 
+    # def self.delete_by_id(id) #deletes the record with the corresponding id
+    #   movie = Movie.find(id)
+    #   movie.destroy
+    # end
+
    def self.delete_all_movies #deletes all the movies from the movies table
         Movie.destroy_all
    end
